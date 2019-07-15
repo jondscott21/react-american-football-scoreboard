@@ -4,6 +4,7 @@ import "./App.css";
 function Buttons(props) {
     return (
         <section className="buttons">
+            <button onClick={ () => props.setQuarter(props.quarter === 4 ? props.quarter - 3 : props.quarter + 1)} className="quarter-button">Quarter</button>
         <div className="homeButtons">
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button onClick={ () => props.setHomeScore(props.homeScore + 7)} className="homeButtons__touchdown">Home Touchdown</button>
